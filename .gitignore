@@ -80,6 +80,10 @@ typings/
 >>>>>>> 85da6ef5e1920e68f04069697d7b2b8e4577f113
 .env.test
 
+public/js/
+public/css/
+public/vendor/
+
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 <<<<<<< HEAD

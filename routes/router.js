@@ -10,12 +10,22 @@ const { cwd } = require('process')
 router.use('/server', serverRouter)
 
 router.get('/downloadmewpew', (req, res) => {
-    const file = cwd() + '/files/dist.rar'
+    const file = cwd() + '/files/MewPew/dist.rar'
     res.download(file, err => console.log(err))
 })
 
 router.get('/downloadmewpew_linux', (req, res) => {
-    const file = cwd() + '/files/dist_linux.rar'
+    const file = cwd() + '/files/MewPew/dist_linux.rar'
+    res.download(file, err => console.log(err))
+})
+
+router.get('/downloadsubmarines', (req, res) => {
+    const file = cwd() + '/files/Submarines/dist.rar'
+    res.download(file, err => console.log(err))
+})
+
+router.get('/downloadsubmarines_linux', (req, res) => {
+    const file = cwd() + '/files/Submarines/dist_linux.rar'
     res.download(file, err => console.log(err))
 })
 

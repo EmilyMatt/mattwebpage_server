@@ -162,8 +162,9 @@ const sortDocumentsBy = (documents, param) => {
 }
 
 const cleanDatabase = async () => {
-    const dbo = await getDbo()
-    await dbo.dropDatabase(dbName)
+
+    const collection = await getCollection(collection_recipes)
+    await collection.drop()
     fs.rmdirSync('../public/tmp', { recursive: true })
     fs.rmdirSync('../public/img/recipes', { recursive: true })
     addMany(config.collection_recipes, JSON.parse(require('../jsons/defaultR')))
