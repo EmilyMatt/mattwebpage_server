@@ -1,6 +1,6 @@
 const { sortDocumentsBy } = require("./database_mongo")
 const { moveTmpFile } = require('./files')
-const { collection_recipes } = require('../config').db
+const { collection_recipes } = require('../config').mongo
 const { v4: generateId } = require("uuid")
 
 module.exports = { 

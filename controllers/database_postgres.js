@@ -1,13 +1,20 @@
 const { Client } = require('pg')
+const {
+    PSQL_USER,
+    PSQL_PASS,
+    PSQL_HOST,
+    PSQL_PORT
+} = process.env
+const { name } = require('../config').psql
 let psqlClient
 
 const connectpsql = () => {
     client = new Client({
-        user: 'saturn',
-        password: '1234',
-        host: 'localhost',
-        database: 'saturn',
-        port: 5432,
+        user: PSQL_USER,
+        password: PSQL_PASS,
+        host: PSQL_HOST,
+        database: name,
+        port: PSQL_PORT,
     })
 
     psqlClient = client.connect()

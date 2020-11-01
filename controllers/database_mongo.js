@@ -1,14 +1,15 @@
-const {MongoClient} = require("mongodb");
-const config = require('../config').db
+const { MongoClient } = require("mongodb");
+const config = require('../config').mongo
 const fs = require('fs')
 
 const {
-    DB_ADMIN,
-    DB_PASS
+    MONGO_ADMIN,
+    MONGO_PASS,
+    MONGO_HOST
 } = process.env;
 
 //this is the client that connects to the database
-const conn = new MongoClient(`mongodb://${DB_ADMIN}:${DB_PASS}@${config.url}/${config.options}`, {useUnifiedTopology: true})
+const conn = new MongoClient(`mongodb://${MONGO_ADMIN}:${MONGO_PASS}@${MONGO_HOST}/${config.options}`, {useUnifiedTopology: true})
 
 //this function simply verifies that the client is connected to the db, if not - it connects
 const getDbo = async (name = config.name) => {

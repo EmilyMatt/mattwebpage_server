@@ -2,7 +2,7 @@ const router = require('express').Router()
 const serverRouter = require('./serverRouter')
 const md5 = require('md5')
 const { addOne } = require('../controllers/database_mongo')
-const { collection_visitors } = require('../config').db
+const { collection_visitors } = require('../config').mongo
 const path = require('path')
 const { cwd } = require('process')
 
@@ -29,7 +29,7 @@ router.get('/downloadsubmarines_linux', (req, res) => {
     res.download(file, err => console.log(err))
 })
 
-router.get('*', async (req, res) => {
+router.get('/', async (req, res) => {
     const ip = md5(md5(md5(req.ip)))
     await addOne(collection_visitors, { ip: ip, date: Date.now() })
     res.sendFile(path.join(cwd(), '/public/index.html'))

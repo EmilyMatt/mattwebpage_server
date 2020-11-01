@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const { collection_forecasts } = require('../../config').db
+const { collection_forecasts } = require('../../config').mongo
 const { imsAPI_15cities } = require('../../controllers/forecast_api')
 const { getMany, sortDocumentsBy } = require('../../controllers/database_mongo')
 const { MAP_KEY } = process.env

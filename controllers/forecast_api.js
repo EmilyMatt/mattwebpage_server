@@ -3,7 +3,7 @@ const axios = require('axios')
 const iconv = require('iconv-lite')
 const fs = require('fs')
 const { addOne } = require('./database_mongo')
-const {collection_forecasts } = require('../config').db
+const { collection_forecasts } = require('../config').mongo
 
 const imsAPI_15cities = async () => {
 

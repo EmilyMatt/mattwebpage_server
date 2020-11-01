@@ -3,12 +3,15 @@ let config = {}
 module.exports = config
 
 //set default arguments for database connection
-config.db = {
+config.mongo = {
     name: "Emily",
     collection_forecasts: "Forecasts",
     collection_recipes: "Recipes",
     collection_visitors: "Visitors",
-    url: "localhost:27017",
     options: "?authSource=admin",
+}
+
+config.psql = {
+    name: "saturn",
     table_users: "users"
 }

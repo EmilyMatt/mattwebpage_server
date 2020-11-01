@@ -3,7 +3,7 @@ const recipesRouter = require('./recipes/recipesRouter')
 const weatherRouter = require('./weather/weatherRouter')
 const saturnRouter = require('./saturn/saturnRouter')
 const { getMany } = require('../controllers/database_mongo')
-const { collection_visitors } = require('../config').db
+const { collection_visitors } = require('../config').mongo
 
 router.use('/getVisitors', async (req, res) => {
 

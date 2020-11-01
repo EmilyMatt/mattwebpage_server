@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const { table_users } = require('../../config').db
+const { table_users } = require('../../config').psql
 const { insertOne, selectMany, updateOne } = require('../../controllers/database_postgres')
 const { v4: generateVer } = require('uuid')
 const { sendMail } = require('../../controllers/mail')

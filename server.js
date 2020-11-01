@@ -37,7 +37,6 @@ app.use(helmet())
 
 // Assign Routes
 app.use('/', router)
-console.log(md5(md5(md5("1234"))))
 
 //schedule cron updates to forecast
 cron.schedule("* 9,22 * * *", imsAPI_15cities)

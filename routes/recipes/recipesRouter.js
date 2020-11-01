@@ -1,7 +1,7 @@
 const router = require('express').Router()
 const { getMany, sortDocumentsBy, addOne, getOne, updateOne } = require('../../controllers/database_mongo')
 const { v4: generateId } = require('uuid')
-const { collection_recipes } = require('../../config').db
+const { collection_recipes } = require('../../config').mongo
 const { uploadImg } = require('../../controllers/files')
 const { setRecipe } = require('../../controllers/recipes_api')
 
