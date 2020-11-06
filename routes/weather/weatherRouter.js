@@ -6,6 +6,7 @@ const { MAP_KEY } = process.env
 
 router.get('/refreshForecast', async (req, res) => {
     await imsAPI_15cities()
+    res.status(200).send("Done.")
 })
 
 router.get("/getForecast", async (req, res) => {

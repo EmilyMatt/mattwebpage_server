@@ -1,235 +1,235 @@
-{
-	"styles": [
-		{
-			"elementType": "labels",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "administrative",
-			"elementType": "geometry",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "administrative.land_parcel",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "administrative.neighborhood",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "landscape.natural",
-			"stylers": [
-				{
-					"color": "#f4e3be"
-				}
-			]
-		},
-		{
-			"featureType": "poi",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "road",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "road",
-			"elementType": "labels.icon",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "transit",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		}
-	],
-	"markers": [
-		{
-			"id": "105",
-			"lat": "31.42",
-			"lng": "35.35",
-			"name-en-US": "En Gedi",
-			"name-he-IL": "עין גדי"
-		},
-		{
-			"id": "106",
-			"lat": "30.61",
-			"lng": "34.8",
-			"name-en-US": "Mizpe Ramon",
-			"name-he-IL": "מצפה רמון"
-		},
-		{
-			"id": "114",
-			"lat": "31.83",
-			"lng": "34.64",
-			"name-en-US": "Ashdod",
-			"name-he-IL": "אשדוד"
-		},
-		{
-			"id": "115",
-			"lat": "32.82",
-			"lng": "35",
-			"name-en-US": "Haifa",
-			"name-he-IL": "חיפה"
-		},
-		{
-			"id": "201",
-			"lat": "32.98",
-			"lng": "35.7",
-			"name-en-US": "Qazrin",
-			"name-he-IL": "קצרין"
-		},
-		{
-			"id": "202",
-			"lat": "32.8",
-			"lng": "35.53",
-			"name-en-US": "Tiberias",
-			"name-he-IL": "טבריה"
-		},
-		{
-			"id": "203",
-			"lat": "32.45",
-			"lng": "35.5",
-			"name-en-US": "Bet Shean",
-			"name-he-IL": "בית שאן"
-		},
-		{
-			"id": "204",
-			"lat": "31.85",
-			"lng": "34.9",
-			"name-en-US": "Lod",
-			"name-he-IL": "לוד"
-		},
-		{
-			"id": "207",
-			"lat": "32.75",
-			"lng": "35.3",
-			"name-en-US": "Nazareth",
-			"name-he-IL": "נצרת"
-		},
-		{
-			"id": "209",
-			"lat": "32.52",
-			"lng": "35.25",
-			"name-en-US": "Afula",
-			"name-he-IL": "עפולה"
-		},
-		{
-			"id": "402",
-			"lat": "32.1",
-			"lng": "34.76",
-			"name-en-US": "Tel Aviv - Yafo",
-			"name-he-IL": "תל אביב - יפו"
-		},
-		{
-			"id": "507",
-			"lat": "33.05",
-			"lng": "35.44",
-			"name-en-US": "Zefat",
-			"name-he-IL": "צפת"
-		},
-		{
-			"id": "510",
-			"lat": "31.78",
-			"lng": "35.22",
-			"name-en-US": "Jerusalem",
-			"name-he-IL": "ירושלים"
-		},
-		{
-			"id": "513",
-			"lat": "31.25",
-			"lng": "34.8",
-			"name-en-US": "Beer Sheva",
-			"name-he-IL": "באר שבע"
-		},
-		{
-			"id": "520",
-			"lat": "29.55",
-			"lng": "34.9",
-			"name-en-US": "Elat",
-			"name-he-IL": "אילת"
-		}
-	],
-	"wCodes-en-US": {
-		"1010": "Sandstorms",
-		"1020": "Thunderstorm",
-		"1060": "Snow",
-		"1070": "Light Snow",
-		"1080": "Sleet",
-		"1140": "Rainy",
-		"1160": "Fog",
-		"1220": "Partly Cloudy",
-		"1230": "Cloudy",
-		"1250": "Clear",
-		"1260": "Windy",
-		"1270": "Muggy",
-		"1300": "Frost",
-		"1310": "Hot",
-		"1320": "Cold",
-		"1510": "Stormy",
-		"1520": "Heavy Snow",
-		"1530": "Partly Cloudy, Possibly Rain",
-		"1540": "Cloudy, Possibly Rain",
-		"1560": "Cloudy, Light Rain",
-		"1570": "Dust",
-		"1580": "Extremely Hot",
-		"1590": "Extremely Cold"
-	},
-	"wCodes-he-IL": {
-		"1010": "סופות חול",
-		"1020": "סופת רעמים וברקים",
-		"1060": "שלג",
-		"1070": "שלג קל",
-		"1080": "גשם מעורב בשלג",
-		"1140": "גשם",
-		"1160": "ערפל",
-		"1220": "מעונן חלקית",
-		"1230": "מעונן",
-		"1250": "בהיר",
-		"1260": "רוחות ערות",
-		"1270": "הביל",
-		"1300": "קרה",
-		"1310": "חם",
-		"1320": "קר",
-		"1510": "סוער",
-		"1520": "שלג כבד",
-		"1530": "מעונן חלקית, סיכוי לגשם",
-		"1540": "מעונן, סיכוי לגשם",
-		"1560": "מעונן, גשם קל",
-		"1570": "אביך",
-		"1580": "חם מאוד",
-		"1590": "קר מאוד"
-	}
+﻿{
+  "styles": [
+    {
+      "elementType": "labels",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative.land_parcel",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative.neighborhood",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "landscape.natural",
+      "stylers": [
+        {
+          "color": "#f4e3be"
+        }
+      ]
+    },
+    {
+      "featureType": "poi",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "road",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "road",
+      "elementType": "labels.icon",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "transit",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    }
+  ],
+  "markers": [
+    {
+      "id": "105",
+      "lat": "31.42",
+      "lng": "35.35",
+      "name-en-US": "En Gedi",
+      "name-he-IL": "עין גדי"
+    },
+    {
+      "id": "106",
+      "lat": "30.61",
+      "lng": "34.8",
+      "name-en-US": "Mizpe Ramon",
+      "name-he-IL": "מצפה רמון"
+    },
+    {
+      "id": "114",
+      "lat": "31.83",
+      "lng": "34.64",
+      "name-en-US": "Ashdod",
+      "name-he-IL": "אשדוד"
+    },
+    {
+      "id": "115",
+      "lat": "32.82",
+      "lng": "35",
+      "name-en-US": "Haifa",
+      "name-he-IL": "חיפה"
+    },
+    {
+      "id": "201",
+      "lat": "32.98",
+      "lng": "35.7",
+      "name-en-US": "Qazrin",
+      "name-he-IL": "קצרין"
+    },
+    {
+      "id": "202",
+      "lat": "32.8",
+      "lng": "35.53",
+      "name-en-US": "Tiberias",
+      "name-he-IL": "טבריה"
+    },
+    {
+      "id": "203",
+      "lat": "32.45",
+      "lng": "35.5",
+      "name-en-US": "Bet Shean",
+      "name-he-IL": "בית שאן"
+    },
+    {
+      "id": "204",
+      "lat": "31.85",
+      "lng": "34.9",
+      "name-en-US": "Lod",
+      "name-he-IL": "לוד"
+    },
+    {
+      "id": "207",
+      "lat": "32.75",
+      "lng": "35.3",
+      "name-en-US": "Nazareth",
+      "name-he-IL": "נצרת"
+    },
+    {
+      "id": "209",
+      "lat": "32.52",
+      "lng": "35.25",
+      "name-en-US": "Afula",
+      "name-he-IL": "עפולה"
+    },
+    {
+      "id": "402",
+      "lat": "32.1",
+      "lng": "34.76",
+      "name-en-US": "Tel Aviv - Yafo",
+      "name-he-IL": "תל אביב - יפו"
+    },
+    {
+      "id": "507",
+      "lat": "33.05",
+      "lng": "35.44",
+      "name-en-US": "Zefat",
+      "name-he-IL": "צפת"
+    },
+    {
+      "id": "510",
+      "lat": "31.78",
+      "lng": "35.22",
+      "name-en-US": "Jerusalem",
+      "name-he-IL": "ירושלים"
+    },
+    {
+      "id": "513",
+      "lat": "31.25",
+      "lng": "34.8",
+      "name-en-US": "Beer Sheva",
+      "name-he-IL": "באר שבע"
+    },
+    {
+      "id": "520",
+      "lat": "29.55",
+      "lng": "34.9",
+      "name-en-US": "Elat",
+      "name-he-IL": "אילת"
+    }
+  ],
+  "wCodes-en-US": {
+    "1010": "Sandstorms",
+    "1020": "Thunderstorm",
+    "1060": "Snow",
+    "1070": "Light Snow",
+    "1080": "Sleet",
+    "1140": "Rainy",
+    "1160": "Fog",
+    "1220": "Partly Cloudy",
+    "1230": "Cloudy",
+    "1250": "Clear",
+    "1260": "Windy",
+    "1270": "Muggy",
+    "1300": "Frost",
+    "1310": "Hot",
+    "1320": "Cold",
+    "1510": "Stormy",
+    "1520": "Heavy Snow",
+    "1530": "Partly Cloudy, Possibly Rain",
+    "1540": "Cloudy, Possibly Rain",
+    "1560": "Cloudy, Light Rain",
+    "1570": "Dust",
+    "1580": "Extremely Hot",
+    "1590": "Extremely Cold"
+  },
+  "wCodes-he-IL": {
+    "1010": "סופות חול",
+    "1020": "סופת רעמים וברקים",
+    "1060": "שלג",
+    "1070": "שלג קל",
+    "1080": "גשם מעורב בשלג",
+    "1140": "גשם",
+    "1160": "ערפל",
+    "1220": "מעונן חלקית",
+    "1230": "מעונן",
+    "1250": "בהיר",
+    "1260": "רוחות ערות",
+    "1270": "הביל",
+    "1300": "קרה",
+    "1310": "חם",
+    "1320": "קר",
+    "1510": "סוער",
+    "1520": "שלג כבד",
+    "1530": "מעונן חלקית, סיכוי לגשם",
+    "1540": "מעונן, סיכוי לגשם",
+    "1560": "מעונן, גשם קל",
+    "1570": "אביך",
+    "1580": "חם מאוד",
+    "1590": "קר מאוד"
+  }
 }
