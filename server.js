@@ -4,23 +4,22 @@ require('mandatoryenv').load()
 const cookieParser = require('cookie-parser')
 const cors = require('cors')
 const helmet = require('helmet')
-const router = require('./routes/router')
 const cron = require('node-cron')
 const { imsAPI_15cities } = require('./controllers/forecast_api')
 const { cleanDatabase } = require('./controllers/database_mongo')
 const { connectpsql } = require('./controllers/database_postgres')
 const { initMailer } = require('./controllers/mail')
-const md5 = require('md5')
 
 // Load .env Enviroment Variables to process.env
-const { PORT } = process.env
+const { PORT} = process.env
 
 // Instantiate an Express Application
 const app = express()
-const server = require('http')
+
+ const server = require('http')
     .createServer(app)
     .listen(PORT)
-
+    
 
 connectpsql()
 initMailer()
@@ -36,7 +35,8 @@ app.use(cors())
 app.use(helmet())
 
 // Assign Routes
-app.use('/', router)
+app.use('/server', require('./routes/serverRouter'))
+app.use('*', require('./routes/router'))
 
 //schedule cron updates to forecast
 cron.schedule("* 9,22 * * *", imsAPI_15cities)

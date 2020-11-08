@@ -131,7 +131,6 @@ const updateOne = async (table, newVals, params) => {
     if (!string)
         return false
 
-    console.log(string)
     return await client.query(string)
 }
 

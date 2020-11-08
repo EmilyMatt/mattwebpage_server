@@ -1,5 +1,4 @@
 const router = require('express').Router()
-const serverRouter = require('./serverRouter')
 const md5 = require('md5')
 const { addOne } = require('../controllers/database_mongo')
 const { collection_visitors } = require('../config').mongo
@@ -7,8 +6,6 @@ const path = require('path')
 const { cwd } = require('process')
 
 //define routes
-router.use('/server', serverRouter)
-
 router.get('/downloadmewpew', (req, res) => {
     const file = cwd() + '/files/MewPew/dist.rar'
     res.download(file, err => console.log(err))
@@ -26,6 +23,11 @@ router.get('/downloadsubmarines', (req, res) => {
 
 router.get('/downloadsubmarines_linux', (req, res) => {
     const file = cwd() + '/files/Submarines/dist_linux.rar'
+    res.download(file, err => console.log(err))
+})
+
+router.get('/downloadcv', (req, res) => {
+    const file = cwd() + '/files/Emily Matheys, CV.pdf'
     res.download(file, err => console.log(err))
 })
 

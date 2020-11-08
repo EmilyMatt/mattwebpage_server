@@ -87,7 +87,6 @@ router.post('/postRecipe', async (req, res) => {
         return sendErr("Too many recipes.")
 
     recipes = sortDocumentsBy(recipes, "number")
-    console.log(recipes)
 
     const number = (recipes.length > 0 
         ? recipes[0].number+1 

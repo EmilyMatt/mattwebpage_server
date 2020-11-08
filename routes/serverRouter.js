@@ -1,7 +1,4 @@
 const router = require('express').Router()
-const recipesRouter = require('./recipes/recipesRouter')
-const weatherRouter = require('./weather/weatherRouter')
-const saturnRouter = require('./saturn/saturnRouter')
 const { getMany } = require('../controllers/database_mongo')
 const { collection_visitors } = require('../config').mongo
 
@@ -38,8 +35,8 @@ router.use('/getVisitors', async (req, res) => {
 })
 
 //define more routers
-router.use('/recipes', recipesRouter)
-router.use('/weather', weatherRouter)
-router.use('/saturn', saturnRouter)
+router.use('/recipes', require('./recipes/recipesRouter'))
+router.use('/weather', require('./weather/weatherRouter'))
+router.use('/saturn', require('./saturn/saturnRouter'))
 
 module.exports = router
