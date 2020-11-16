@@ -1,9 +1,9 @@
 const router = require('express').Router()
-const md5 = require('md5')
 const { addOne } = require('../controllers/database_mongo')
 const { collection_visitors } = require('../config').mongo
 const path = require('path')
 const { cwd } = require('process')
+const crypto = require('crypto')
 
 //define routes
 router.get('/downloadmewpew', (req, res) => {
@@ -31,9 +31,9 @@ router.get('/downloadcv', (req, res) => {
     res.download(file, err => console.log(err))
 })
 
-router.get('/', async (req, res) => {
-    const ip = md5(md5(md5(req.ip)))
-    await addOne(collection_visitors, { ip: ip, date: Date.now() })
+router.get('*', async (req, res) => {
+    const ip = crypto.createHash('md5').update(req.headers['x-forwarded-for']).digest('hex')
+    const added = await addOne(collection_visitors, { ip: ip, date: Date.now() })
     res.sendFile(path.join(cwd(), '/public/index.html'))
 })
 

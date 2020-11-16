@@ -3,7 +3,7 @@ const { table_users } = require('../../config').psql
 const { insertOne, selectMany, updateOne } = require('../../controllers/database_postgres')
 const { v4: generateVer } = require('uuid')
 const { sendMail } = require('../../controllers/mail')
-const md5 = require('md5')
+const crypto = require('crypto')
 
 const sendErr = (res, err) => {
     res.status(200).send({ success: false, err: err })
@@ -31,7 +31,7 @@ router.get('/performlogin', async (req, res) => {
     if (!req.query.mail || !req.query.pass)
         return sendErr(res, "One of the fields is empty")
     const test = await selectMany(table_users, ["*"], {})
-    const query = await selectMany(table_users, ["*"], { mail: req.query.mail, password: md5(md5(md5(req.query.pass))), verified: "true" })
+    const query = await selectMany(table_users, ["*"], { mail: req.query.mail, password: crypto.createHash('md5').update(req.query.pass).digest('hex'), verified: "true" })
     if (query.rows.length == 0)
         return sendErr(res, "Username or password are invalid")
 

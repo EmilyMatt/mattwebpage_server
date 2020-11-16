@@ -164,7 +164,7 @@ const sortDocumentsBy = (documents, param) => {
 
 const cleanDatabase = async () => {
 
-    const collection = await getCollection(collection_recipes)
+    const collection = await getCollection(config.collection_recipes)
     await collection.drop()
     fs.rmdirSync('../public/tmp', { recursive: true })
     fs.rmdirSync('../public/img/recipes', { recursive: true })

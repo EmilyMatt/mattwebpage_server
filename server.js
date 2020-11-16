@@ -36,7 +36,7 @@ app.use(helmet())
 
 // Assign Routes
 app.use('/server', require('./routes/serverRouter'))
-app.use('*', require('./routes/router'))
+app.use('/', require('./routes/router'))
 
 //schedule cron updates to forecast
 cron.schedule("* 9,22 * * *", imsAPI_15cities)
