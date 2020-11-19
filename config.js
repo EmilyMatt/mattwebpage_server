@@ -12,6 +12,6 @@ config.mongo = {
 }
 
 config.psql = {
-    name: "saturn",
+    name: "postgres",
     table_users: "users"
 }
